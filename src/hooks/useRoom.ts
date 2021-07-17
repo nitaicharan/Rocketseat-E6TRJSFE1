@@ -9,7 +9,7 @@ type FirebaseQuestions = Record<string, {
     }
     content: string
     isAnswered: boolean;
-    idHighlighted: boolean;
+    isHighLighted: boolean;
     likes: Record<string, {
         authorId: string;
     }>
@@ -22,7 +22,7 @@ type QuestionType = {
         name: string;
         avatar: string;
     }
-    idHighlighted: boolean;
+    isHighLighted: boolean;
     isAnswered: boolean;
     likeCount: number;
     likeId: string | undefined;
@@ -41,6 +41,8 @@ export function useRoom(roomId: string) {
             const databaseRoom = room.val();
             const firebaseQuestions: FirebaseQuestions = databaseRoom.questions ?? {};
 
+            console.log(firebaseQuestions);
+            
             const parsedQuestions = Object.entries(firebaseQuestions).map(([key, value]) => ({
                 ...value,
                 id: key,
