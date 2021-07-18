@@ -1,16 +1,15 @@
 <!-- PROJECT SHIELDS -->
 
-![Udemy][udemy-shield]
-![Angular][angular-shield]
+![React][react-shield]
 ![TypeScript][typescript-shield]
 ![HTML5][html5-shield]
 ![CSS3][css3-shield]
 ![Sass][sass-shield]
 
-<p align="center">:bangbang: Project available to access at: https://rocketseate5trjsfe1-clgq8mgj6-nitaicharan.vercel.app/ :bangbang:</p>
+<p align="center">:bangbang: Project available to access at: https://rocketseate6trjsfe1.web.app :bangbang:</p>
 
-<!--[![](Rocketseat-E6TRJSFE1.png)](https://rocketseate5trjsfe1-clgq8mgj6-nitaicharan.vercel.app//)-->
-<a href="https://rocketseate5trjsfe1-clgq8mgj6-nitaicharan.vercel.app/">
+<!--[![](PREVIEW.svg)](https://rocketseate6trjsfe1.web.app)-->
+<a href="https://rocketseate6trjsfe1.web.app">
   <p align="center">
     <img style="height: 100px" src="PREVIEW.png">
   </p>
@@ -23,7 +22,7 @@ This project was part of the Rocketseat event "Edição 6 - Trilha ReactJS Front
 - [Course][course-url]
 - [Instructor][instructor-url]
 
-### 
+###
 
 <p align="center">
   <img src="CERTIFICATE.jpg">
@@ -39,15 +38,25 @@ This project was part of the Rocketseat event "Edição 6 - Trilha ReactJS Front
 [![Twitter][twitter-shield]][twitter-url]
 
 ## Development GitHub Pages
+<!-- https://www.pluralsight.com/guides/how-to-create-react-application-and-deploy-on-github-pages -->
+
+```json
+...
+// Add this property in file package.json:
+{
+  "homepage": "https://nitaicharan.github.io/Rocketseat-E6TRJSFE1",
+}
+...
+```
 
 ```
-ng build --prod --base-href=/Rocketseat-E6TRJSFE1/
+yarn build
 
 git add -A
 git commit -m <tittle> <message>
 git push origin main
-git subtree push --prefix dist/course origin gh-pages
-git push origin `git subtree split --prefix dist/course master`:gh-pages --force
+git subtree push --prefix build/ origin gh-pages
+git push origin `git subtree split --prefix build/ main`:gh-pages --force
 ```
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -96,4 +105,4 @@ git push origin `git subtree split --prefix dist/course master`:gh-pages --force
 [flutter-shield]: https://img.shields.io/badge/-Flutter-white.svg?logo=flutter&logoColor=white&colorB=02569B
 [android-shield]: https://img.shields.io/badge/-Android-white.svg?logo=android&logoColor=white&colorB=3DDC84
 [apple-shield]: https://img.shields.io/badge/-Apple-white.svg?logo=apple&logoColor=white&colorB=999999
-[bootstrap-shield]:https://img.shields.io/badge/-Bootstrap-white.svg?logo=bootstrap&logoColor=white&colorB=563D7C
+[bootstrap-shield]: https://img.shields.io/badge/-Bootstrap-white.svg?logo=bootstrap&logoColor=white&colorB=563D7C
